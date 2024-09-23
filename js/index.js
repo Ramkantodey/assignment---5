@@ -8,6 +8,7 @@ const historyButton = document.getElementById('history-button');
 const donationButton = document.getElementById('donation-button');
 const donationCard = document.getElementById('card');
 const history = document.getElementById('history-list');
+const footer = document.getElementById('footer');
 
 
 // history button classlist
@@ -16,6 +17,8 @@ historyButton.addEventListener('click', function () {
     donationButton.classList.remove('bg-primary')
     donationCard.classList.add('hidden')
     history.classList.remove('hidden')
+    footer.classList.add('hidden')
+
 
 
 })
@@ -25,6 +28,7 @@ donationButton.addEventListener('click', function () {
     historyButton.classList.remove('bg-primary')
     donationCard.classList.remove('hidden')
     history.classList.add('hidden')
+    footer.classList.remove('hidden')
 
 })
 // addEventListener One
