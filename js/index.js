@@ -33,7 +33,7 @@ document.getElementById('donate-button').addEventListener('click', function () {
     if (isNaN(inputAmount) || inputAmount < 1) {
         alert('Invalid Donation amount');
     } else {
-
+        document.getElementById('my_modal_6').checked = true;
         const balance = Number(document.getElementById('balance').innerText);
 
         const newBalance = balance - inputAmount;
@@ -70,7 +70,7 @@ document.getElementById('donate-button-2').addEventListener('click', function ()
     if (isNaN(inputAmount2) || inputAmount2 < 1) {
         alert('Invalid Donation amount');
     } else {
-
+        document.getElementById('my_modal_6').checked = true;
         const balance = Number(document.getElementById('balance').innerText);
 
         const newBalance2 = balance - inputAmount2;
@@ -104,7 +104,7 @@ document.getElementById('donate-button-3').addEventListener('click', function ()
     if (isNaN(inputAmount3) || inputAmount3 < 1) {
         alert('Invalid Donation amount');
     } else {
-
+        document.getElementById('my_modal_6').checked = true;
         const balance = Number(document.getElementById('balance').innerText);
 
         const newBalance3 = balance - inputAmount3;

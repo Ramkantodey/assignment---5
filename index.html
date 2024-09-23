@@ -60,6 +60,7 @@
         <!-- NAVBAR END -->
     </header>
     <main class="w-11/12 mx-auto space-y-10 my-20" id="card">
+
         <!-- CARD - 1 START -->
         <div class="flex lg:flex-row flex-col gap-10 p-5 border rounded-xl shadow-md">
             <img class=" " src="./assets/noakhali.png" alt="">
@@ -117,8 +118,24 @@
         </div>
         <!-- CARD - 3 END -->
     </main>
-    <div id="history-list">
+    <div id="history-list" class="hidden">
 
+    </div>
+
+    <!-- Modal-->
+    <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+    <div class="modal" role="dialog">
+        <div class="modal-box">
+            <h3 class="text-3xl font-bold text-center">Congrates!</h3>
+            <div class="flex justify-center mt-5">
+                <img class="w-10 h-10 " src="./assets/coin.png" alt="">
+            </div>
+            <p class="py-4 text-center">You Have Donated for Humankind</p>
+            <h1 class="text-center text-xl font-bold">Successfully</h1>
+            <div class="modal-action justify-center">
+                <label for="my_modal_6" class="btn">Close</label>
+            </div>
+        </div>
     </div>
 
 
