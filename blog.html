@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Ticket Booking</title>
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font CDN-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- TailwindCSS and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B4F461',
+                        secondary: '#565654',
+                    },
+                    fontFamily: {
+                        Lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        #kanto {
+            background: transparent;
+            backdrop-filter: blur(3px);
+        }
+    </style>
+</head>
+
+<body class="font-Lexend">
+    <header class="   sticky top-0 " id="kanto">
+        <!-- NAVBAR START -->
+        <section class="bg-[#F9F7F3]">
+            <nav class="pt-6 pb-7 w-11/12 mx-auto navnav">
+                <ul class="flex justify-between items-center">
+                    <li><button class="btn bg-primary text-xl text-black font-semibold px-5" id="home">Home</button>
+                    </li>
+                    <li class="flex items-center gap-3"><img src="./assets/logo.png" alt=""><span
+                            class="text-black text-xl font-semibold hidden lg:block">Donate Bangladesh</span></li>
+                    <li class="flex items-center gap-3 text-secondary font-semibold text-xl"><img
+                            src="./assets/coin.png" alt="">
+                        <span>5500</span> BDT
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <!-- NAVBAR END -->
+    </header>
+
+    <main class="w-11/12 mx-auto mt-14 space-y-9">
+        <h1 class="text-4xl font-bold text-black">Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border p-4">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM) ?</div>
+                <div class="collapse-content">
+                    <p>The DOM, or Document Object Model, represents the structure of web pages, enabling dynamic
+                        manipulation of content and styles.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border p-4">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+                <div class="collapse-content">
+                    <p>Use document.querySelector() or document.getElementById() to select DOM elements easily.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border p-4">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a technique in the DOM where a single event listener is added to a parent
+                        element instead of individual listeners on child elements. When an event occurs on a child, it
+                        bubbles up to the parent, triggering the listener.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border p-4">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute and styles
+                    using the DOM</div>
+                <div class="collapse-content">
+                    <p>
+                        You can manipulate attributes with getAttribute(), setAttribute(), and removeAttribute(). For
+                        styles, use element.style or classList.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>
